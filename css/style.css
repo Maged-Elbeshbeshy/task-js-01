@@ -1,0 +1,139 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Courier New', Courier, monospace;
+}
+nav{
+   position: sticky !important;
+   top: 0;
+   width: 100%;
+   z-index: 2;
+   
+}
+.row {
+   margin: 0;
+   padding: 40px 0;
+}
+
+.card {
+   margin: 10px auto;
+   text-align: center;
+   width: 320px;
+   box-shadow: 0 0 7px 1px black ;
+   overflow: hidden;
+}
+
+.card h5,
+.card img {
+   font-weight: 900;
+   cursor: pointer;
+}
+
+.card img:hover {
+   transform: scale(1.1);
+   transition: all 0.5s;
+}
+#show-price{
+font-size: 20px;
+font-weight: bold;
+}
+#content{
+   position: fixed;
+   top: 60px;
+   right: 10px;
+   border-radius: 5px;
+   width: 140px;
+   box-shadow: 0 0 7px 1px black inset;
+   text-align: center;
+   font-size: 10px;
+   font-weight: 900;
+   z-index: 2;
+
+}
+#btn-allPrice{
+   position: sticky;
+   top: 60px;
+   left: 5px;
+   /* transform: translate(-50% ,0%); */
+   width: 140px;
+   border-radius: 10px;
+   font-size: 15px;
+   font-weight: bold;
+   box-shadow: 0 0 7px 1px black inset;
+   background-color: #fff;
+   z-index: 2;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   display: none;
+}
+#total-EGP{
+   position: fixed;
+   top: 130px;
+   left: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+   width: 130px;
+   background-color: #fff;
+   box-shadow: 0 0 7px 1px black inset;
+   border-radius: 10px;
+   z-index: 2;
+}
+
+#total-dollar{
+   position: fixed;
+   top: 190px;
+   left: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+   width: 130px;
+   background-color: #fff;
+   box-shadow: 0 0 7px 1px black inset;
+   border-radius: 10px;
+   z-index: 2;
+}
+@media (max-width: 960px) {
+   #total-EGP{
+      left: 5px;
+      font-size: 12px;
+      width: 80px;
+      background-color: #000000;
+      box-shadow: 0 0 7px 1px rgb(80, 80, 80) inset;
+      color: #fff !important;
+   }
+   #total-dollar{
+      top: 180px !important;
+      left: 5px !important;
+      font-size: 12px !important;
+      width: 80px !important;
+      background-color: #000000 !important;
+      box-shadow: 0 0 7px 1px rgb(80, 80, 80) inset !important;
+      color: #fff !important;
+   }
+   #btn-allPrice{
+      position: fixed;
+      top: 0px;
+      left: 50%;
+      transform: translate(-50% ,10px );
+      width: 150px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 0 7px 1px rgb(255, 255, 255) inset;
+      background-color: #000000;
+      color: #fff !important;
+      letter-spacing: 0px;
+      padding: 5px 0;
+      text-transform: uppercase;
+      display: none;
+   }
+   #content{
+      position: fixed;
+      top: 55px;
+      right: 5px;
+      box-shadow: 0 0 7px 1px rgb(255, 255, 255) inset;
+      background-color: #000000 !important;
+      color:#fff !important;
+   }
+   }
